@@ -1,0 +1,52 @@
+{
+    "name": "Vue Chrome Extension",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Vue.js Chrome Extension Template",
+    "author": "Jaeger <JaegerCode@gmail.com>",
+    "homepage_url": "https://github.com/jae-jae",
+    "icons": {
+      "16": "icons/main.png",
+      "128": "icons/main.png"
+    },
+    "background": {
+      "scripts": [
+        "scripts/chromereload.js",
+        "scripts/background.js"
+      ]
+    },
+    "permissions": [
+      "tabs",
+      "<all_urls>",
+      "background",
+      "storage",
+      "alarms",
+      "webNavigation",
+      "notifications"
+    ],
+    "options_page": "ui/index.html#option",
+    "content_scripts": [
+      {
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+        ],
+        "js": [
+          "scripts/content.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": false
+      }
+    ],
+    "browser_action": {
+      "default_icon": {
+        "19": "icons/main.png",
+        "38": "icons/main.png"
+      },
+      "default_title": "Vue Chrome Extension",
+      "default_popup": "ui/index.html#popup"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "web_accessible_resources": []
+  }
+  

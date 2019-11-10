@@ -1,0 +1,27 @@
+{
+  "name": "chrome-better-and-better",
+  "version": "1.0.0",
+  "description": "better and better",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp --gulpfile ./gulpfile.js",
+    "build": "gulp --gulpfile ./gulpfile.js build"
+  },
+  "keywords": [
+    "chrome"
+  ],
+  "author": "Jaeger <JaegerCode@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.5",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  }
+}
