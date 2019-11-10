@@ -19,13 +19,13 @@ Chrome 扩展脚手架，使用 Vue.js + webpack 来开发和打包Chrome扩展,
 
 ## 开发
 
-1. 编译Chrome脚本
+1. 开发Chrome脚本
 ```
 yarn install
 yarn dev
 ```
 
-2. 编译UI
+2. 开发UI
 ```shell
 $ cd ui
 $ yarn install
@@ -33,6 +33,13 @@ $ yarn watch
 ```
 
 然后使用 Chrome 加载`dist`目录生成的扩展文件。
+
+## 编译
+
+```
+yarn build
+```
+
 
 ## 替换 UI 框架
 
