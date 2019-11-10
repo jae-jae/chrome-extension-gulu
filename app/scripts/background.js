@@ -1,1 +1,1 @@
-console.log('This is BACKGROUND page22!')
+console.log('This is BACKGROUND page!')
